@@ -1,8 +1,11 @@
+@file:OptIn(ExperimentalLayoutApi::class)
+
 package com.example.smartledger.ui.screen
 
 import android.Manifest
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import android.graphics.BitmapFactory
 import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult

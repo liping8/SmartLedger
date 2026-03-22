@@ -94,8 +94,9 @@ fun HomeScreen(navController: NavController, viewModel: MainViewModel) {
                     if (budget > 0) {
                         Spacer(modifier = Modifier.height(8.dp))
                         val progress = (monthTotal / budget).toFloat().coerceIn(0f, 1f)
+                        @Suppress("DEPRECATION")
                         LinearProgressIndicator(
-                            progress = { progress },
+                            progress = progress,
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .height(6.dp)

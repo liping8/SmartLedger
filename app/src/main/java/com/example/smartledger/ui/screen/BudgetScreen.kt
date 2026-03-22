@@ -79,8 +79,9 @@ fun BudgetScreen(navController: NavController, viewModel: MainViewModel) {
                             else MaterialTheme.colorScheme.error
                         )
                         Spacer(modifier = Modifier.height(8.dp))
+                        @Suppress("DEPRECATION")
                         LinearProgressIndicator(
-                            progress = { (monthTotal / currentBudget).toFloat().coerceIn(0f, 1f) },
+                            progress = (monthTotal / currentBudget).toFloat().coerceIn(0f, 1f),
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .height(8.dp),
